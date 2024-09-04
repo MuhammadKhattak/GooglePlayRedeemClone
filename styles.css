@@ -1,0 +1,349 @@
+@font-face {
+  font-family: ProductSans;
+  src: url(fonts/ProductSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: ProductSans-Bold;
+  src: url(fonts/ProductSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: ProductSans-Light;
+  src: url(fonts/ProductSans-Light.ttf);
+}
+
+body {
+  font-family: ProductSans;
+}
+
+.logo img {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(102, 107, 111);
+  height: 64px;
+  min-width: 100%;
+  background-color: white;
+  transition: box-shadow 0.3s;
+}
+
+.logo {
+  display: flex;
+  font-family: ProductSans-Light;
+  color: rgb(85, 90, 94);
+  font-size: 15px;
+  font-weight: 200;
+  align-items: center;
+  min-width: 180px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.logo span {
+  font-weight: 700;
+}
+
+.logo img {
+  margin: 8px;
+}
+
+.logo h2 {
+  display: flex;
+  justify-content: space-between;
+  min-width: 115px;
+}
+
+.scrolled {
+  outline: 2px solid red;
+}
+
+.shadow {
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links span {
+  display: inline-block;
+  line-height: 61px;
+  font-size: 14px;
+  margin: 0 1em;
+  align-items: center;
+  min-height: 61px;
+  min-width: fit-content;
+}
+
+.nav-links span:hover {
+  color: rgba(33, 32, 36);
+}
+
+#current-tab {
+  color: rgb(0, 134, 95);
+  border-bottom: 3px solid rgb(0, 134, 95);
+}
+
+.nav-content {
+  width: 50%;
+  display: flex;
+}
+
+.help-container {
+  display: flex;
+  margin: 0;
+  min-width: 160px;
+}
+
+.button-container {
+  min-width: 48px;
+  min-height: 48px;
+  align-items: center;
+  display: flex;
+}
+
+.help-container button {
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  transition: 0.3s;
+  padding: 8px 2px;
+}
+
+.help-container button:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.help-container button img {
+  max-width: 24px;
+  max-height: 24px;
+  border-radius: 50%;
+}
+
+button #profile {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.main-content {
+  margin-left: 96px;
+}
+
+.device-filter-bar {
+  height: auto;
+  width: 928px;
+  border-top: 24px;
+  margin-top: 96px;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 2px;
+}
+
+.filter-button {
+  font-family: ProductSans;
+  color: rgb(102, 107, 111);
+  background-color: white;
+  border-radius: 20px / 50%;
+  border: 1px solid rgb(220, 220, 228);
+}
+
+.filter-button:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+#selected-button {
+  color: rgb(4, 101, 73);
+  background-color: rgb(231, 242, 239);
+  border: none;
+}
+
+.filter-content {
+  display: flex;
+  align-items: center;
+  padding: 2px 8px;
+}
+
+.filter-content img {
+  width: 16px;
+  height: 16px;
+}
+
+.filter-content p {
+  margin: 6px 4px;
+}
+
+.banner-container {
+  padding-top: 36px;
+  max-width: 90vw;
+}
+
+.redeem-banner {
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.redeem-banner:hover {
+  padding: 2px solid gray;
+}
+
+#ribbon {
+  padding: none;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: -20px;
+}
+
+.banner-text-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  max-width: 100%;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.banner-text-container h2 {
+  font-size: 30px;
+}
+
+#redeem-button {
+  font-family: ProductSans;
+  margin-top: 12%;
+  margin-right: 5%;
+  height: 48px;
+  width: 176px;
+  border-radius: 20px / 50%;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.banner-image-container {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.play-card-banner {
+  height: 261px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+#logo-icon {
+  width: 261px;
+  height: 156px;
+}
+
+.footer-container {
+  color: rgb(102, 107, 111);
+  font-size: 14px;
+}
+
+.resources {
+  padding-top: 32px;
+  width: 90%;
+  border-top: 1px solid rgb(220, 220, 228);
+  display: flex;
+}
+
+.resources h3 {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.resources p {
+  margin: 7px 0;
+}
+
+.play-resources {
+  display: flex;
+  flex-direction: column;
+  width: 266px;
+}
+
+.parental-resources {
+  display: flex;
+  flex-direction: column;
+}
+
+.legal {
+  margin-top: 32px;
+}
+
+.legal-links {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.legal-links p {
+  margin-right: 24px;
+}
+
+@media (min-width: 840px) and (max-width: 1440px) {
+  .play-resources {
+    width: 244px;
+  }
+}
+
+@media (max-width: 840px) {
+  .resources {
+    flex-direction: column;
+  }
+  .play-resources {
+    width: auto;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+}
+
+.redeem-box {
+  width: 560px;
+  height: 307px;
+  background-color: white;
+}
+
+.redeem-box-header {
+  padding: 24px 24px 20px 224px;
+}
+
+.redeem-text-h3 {
+  margin-bottom: 0px;
+}
+
+.redeem-text-email {
+  margin-top: 0px;
+}
